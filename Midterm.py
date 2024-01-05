@@ -38,7 +38,6 @@ def hangman(word): # The function
         dash.append("_") # Making what the player would see
     print(" ".join(dash)) # Showing the player the num of letters
     while worda != "-"*len(word)  : # Sets the win condition
-        dasha = dash
         guess = input("What's your guess? ").lower()  # Convert the guessed letter to lowercase
         wordf = wordg.find(guess) # Seeing if their guess was correct
         if wordf != -1: # Checks to see if the guess was in the word
